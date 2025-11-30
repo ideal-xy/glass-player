@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 允许窗口拖拽的区域 */
+.titlebar-drag-region {
+  -webkit-app-region: drag;
+}
+
+/* 禁止拖拽的区域（按钮等） */
+button, .no-drag {
+  -webkit-app-region: no-drag;
+}
+
+body {
+  margin: 0;
+  background: transparent; /* 确保 Electron 透视到底层 */
+  overflow: hidden;
+}

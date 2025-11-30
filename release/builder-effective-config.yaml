@@ -1,0 +1,15 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.hyperspace.player
+productName: Hyperspace
+mac:
+  category: public.app-category.music
+  target:
+    - dmg
+  icon: build/icon.png
+files:
+  - filter:
+      - dist/**/*
+      - main.js
+electronVersion: 27.3.11
